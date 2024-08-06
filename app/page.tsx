@@ -5,7 +5,8 @@ import Customer from "@/components/sections/Customers";
 import Services from "@/components/sections/Services";
 import Social from "@/components/sections/Social";
 import Footer from "@/components/sections/Footer";
-import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/ContactUs";
+
 // import Services from "@/components/sections/services";
 // import Technologies from "@/components/sections/technologies";
 // import Contact from "@/components/sections/contact";
@@ -72,6 +73,8 @@ export default function Home() {
       <Projects projects={projectData} />
 
       <Social />
+      <Contact />
+
       <Footer />
     </>
   );
