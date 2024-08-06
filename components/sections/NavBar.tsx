@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Hero = () => {
+const Navbar = () => {
     return (
         <>
          <header>
@@ -49,4 +49,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Navbar;
