@@ -14,14 +14,7 @@ import Projects from "@/components/sections/Projects";
 // import Contact from "@/components/sections/contact";
 
 const projectData = [
-  {
-    imageSrc: "/pos.png",
-    company: "Retail Shop",
-    title: "Point of Sale System",
-    description:
-      "MSIC POS is a point of sale system that help you manage your business with ease.",
-    caseStudyLink: "#",
-  },
+  
   {
     imageSrc: "/jak.png",
     altText: "company portfolio",
@@ -31,15 +24,7 @@ const projectData = [
       "Jak Digital Solutions official website. A company that provides digital solutions to businesses.",
     caseStudyLink: "https://jakdigitalsolutions.com.au/",
   },
-  {
-    imageSrc: "/car.png",
-    altText: "Car Rental System",
-    company: "JAK Car Rental Solutions",
-    title: "Car Rental System",
-    description:
-      "Web application offering car rental services in Melbourne, Sydney, Geelong, and Central Coast to users in need of transportation",
-    caseStudyLink: "https://jakcarrentalsolutions.com.au/",
-  },
+  
   {
     imageSrc: "/mask.png",
     altText: "Ecormmerce platform",
@@ -48,6 +33,32 @@ const projectData = [
     description:
       "E Commerce Website that offers a wide range of traditional masks from Sri Lankan culture to users who are interested worlwide.",
     caseStudyLink: "#",
+  },
+  {
+    imageSrc: "/hotel.png",
+    altText: "Hotel Management System",
+    company: "Bouganvilla Hotels",
+    title: "Hotel Management System",
+    description:
+      "Hotel Management System for Bouganvilla Hotels, a chain of hotels in Sri Lanka.",
+    caseStudyLink: "#",
+  },
+  {
+    imageSrc: "/pos.png",
+    company: "Retail Shop",
+    title: "Point of Sale System",
+    description:
+      "MSIC POS is a point of sale system that help you manage your business with ease.",
+    caseStudyLink: "#",
+  },
+  {
+    imageSrc: "/car.png",
+    altText: "Car Rental System",
+    company: "JAK Car Rental Solutions",
+    title: "Car Rental System",
+    description:
+      "Web application offering car rental services in Melbourne, Sydney, Geelong, and Central Coast to users in need of transportation",
+    caseStudyLink: "https://jakcarrentalsolutions.com.au/",
   },
   {
     imageSrc: "/property.png",
@@ -73,18 +84,21 @@ const projectData = [
     company: "A & M Travels",
     title: "Company Website",
     description:
-      "Flowbite helps you connect with friends, family and communities of people who share your interests.",
+      "Website for A & M Travels, a travel agency that offers a wide range of travel services.",
     caseStudyLink: "#",
   },
+  
   {
-    imageSrc: "/hotel.png",
-    altText: "Hotel Management System",
-    company: "Bouganvilla Hotels",
-    title: "Hotel Management System",
+    imageSrc: "/hotelRomaya.png",
+    altText: "Hotel Website",
+    company: "Hotel Romaya",
+    title: "Hotel Website",
     description:
-      "Flowbite helps you connect with friends, family and communities of people who share your interests.",
-    caseStudyLink: "#",
-  },
+      "Experience luxury and tranquility at Hotel Romaya, nestled in the picturesque coastal towns of Matara and Mirissa.",
+    caseStudyLink: "https://hotelromaya.com",
+},
+
+  
 ];
 
 export default function Home() {
