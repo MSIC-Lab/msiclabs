@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import Hero from "@/components/sections/Hero";
+import Hero from "@/components/sections/hero";
 import Navbar from "@/components/ui/navbar";
 import Customer from "@/components/sections/Customers";
 import Services from "@/components/sections/Services";
@@ -8,7 +8,6 @@ import Footer from "@/components/sections/Footer";
 // import Services from "@/components/sections/services";
 // import Technologies from "@/components/sections/technologies";
 // import Contact from "@/components/sections/contact";
-
 
 export default function Home() {
   return (
@@ -19,8 +18,6 @@ export default function Home() {
       <Services />
       <Social />
       <Footer />
-      
-     
     </>
   );
 }
