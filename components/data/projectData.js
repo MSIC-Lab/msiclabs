@@ -1,0 +1,42 @@
+export const projectData = [
+  {
+    imageSrc: "./image/projects/1.png",
+    altText: "JAK Car Rental Solutions",
+    company: "JAK Car Rental Solutions",
+    title: "JAK Car Rental Solutions",
+    description: "Web application offering car rental services in Melbourne, Sydney, Geelong, and Central Coast to users in need of transportation.",
+    caseStudyLink: "https://jakcarrentalsolutions.com.au/",
+  },
+  {
+    imageSrc: "./image/projects/2.png",
+    altText: "Traditional Masks",
+    company: "Traditional Masks",
+    title: "Traditional Masks",
+    description: "E-commerce website that offers a wide range of traditional masks from Sri Lankan culture to users worldwide.",
+    caseStudyLink: "https://dev1.iamtrazy.eu.org/",
+  },
+  {
+    imageSrc: "./image/projects/3.png",
+    altText: "JAK Property Solutions",
+    company: "JAK Property Solutions",
+    title: "JAK Property Solutions",
+    description: "Website for JAK Property Solutions offering unparalleled services across three states in Australia.",
+    caseStudyLink: "https://jakpropertysolutions.com.au/",
+  },
+  {
+    imageSrc: "./image/projects/4.png",
+    altText: "SANIMA.lk",
+    company: "SANIMA.lk",
+    title: "SANIMA.lk",
+    description: "Website for Sanima Holdings, the leading steel building construction company in Sri Lanka.",
+    caseStudyLink: "https://sanima.lk/",
+  },
+  {
+    imageSrc: "./image/projects/5.png",
+    altText: "MSIC POS",
+    company: "MSIC Labs",
+    title: "MSIC POS System",
+    description: "MSIC POS System is a point of sale system designed for small and medium-sized businesses.",
+    caseStudyLink: "https://sanima.lk/",
+  },
+];

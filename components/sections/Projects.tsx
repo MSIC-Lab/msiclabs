@@ -94,7 +94,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                   {project.description}
                 </p>
                 <a
-                  href="#"
+                  href={project.caseStudyLink}
                   title=""
                   className="text-white bg-primary-700 justify-center hover:bg-primary-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                   role="button"
