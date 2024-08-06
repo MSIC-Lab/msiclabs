@@ -6,6 +6,7 @@ import Services from "@/components/sections/Services";
 import Social from "@/components/sections/Social";
 import Footer from "@/components/sections/Footer";
 import Contact from "@/components/sections/ContactUs";
+import Projects from "@/components/sections/Projects";
 
 // import Services from "@/components/sections/services";
 // import Technologies from "@/components/sections/technologies";
@@ -13,9 +14,7 @@ import Contact from "@/components/sections/ContactUs";
 
 const projectData = [
   {
-    imageSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXd03DjoukH5H5-kMKiWvox8bUrf75d4tpg&s",
-    altText: "Image description",
+    imageSrc: "/pos.png",
     company: "Microsoft Corp.",
     title: "Management system",
     description:
@@ -23,8 +22,7 @@ const projectData = [
     caseStudyLink: "#",
   },
   {
-    imageSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXd03DjoukH5H5-kMKiWvox8bUrf75d4tpg&s",
+    imageSrc: "/jak.png",
     altText: "Image description",
     company: "Google Inc.",
     title: "E-commerce website",
@@ -33,8 +31,7 @@ const projectData = [
     caseStudyLink: "#",
   },
   {
-    imageSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXd03DjoukH5H5-kMKiWvox8bUrf75d4tpg&s",
+    imageSrc: "/car.png",
     altText: "Image description",
     company: "Facebook Inc.",
     title: "Social media app",
@@ -43,8 +40,7 @@ const projectData = [
     caseStudyLink: "#",
   },
   {
-    imageSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXd03DjoukH5H5-kMKiWvox8bUrf75d4tpg&s",
+    imageSrc: "/mask.png",
     altText: "Image description",
     company: "Amazon Inc.",
     title: "E-learning platform",
@@ -53,8 +49,34 @@ const projectData = [
     caseStudyLink: "#",
   },
   {
-    imageSrc:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXd03DjoukH5H5-kMKiWvox8bUrf75d4tpg&s",
+    imageSrc: "/property.png",
+    altText: "Image description",
+    company: "Twitter Inc.",
+    title: "Healthcare app",
+    description:
+      "Flowbite helps you connect with friends, family and communities of people who share your interests.",
+    caseStudyLink: "#",
+  },
+  {
+    imageSrc: "/sanima.png",
+    altText: "Image description",
+    company: "Twitter Inc.",
+    title: "Healthcare app",
+    description:
+      "Flowbite helps you connect with friends, family and communities of people who share your interests.",
+    caseStudyLink: "#",
+  },
+  {
+    imageSrc: "/travel.png",
+    altText: "Image description",
+    company: "Twitter Inc.",
+    title: "Healthcare app",
+    description:
+      "Flowbite helps you connect with friends, family and communities of people who share your interests.",
+    caseStudyLink: "#",
+  },
+  {
+    imageSrc: "/hotel.png",
     altText: "Image description",
     company: "Twitter Inc.",
     title: "Healthcare app",
