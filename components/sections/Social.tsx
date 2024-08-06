@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Hero = () => {
+const Social = () => {
     return (
         <>
         <section className="bg-white dark:bg-gray-900">
@@ -26,4 +26,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Social;

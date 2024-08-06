@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Hero = () => {
+const Services = () => {
     return (
         <section className="bg-white dark:bg-gray-900">
   <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
@@ -58,4 +58,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Services;

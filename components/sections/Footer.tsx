@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Hero = () => {
+const Footer = () => {
     return (
         <>
         <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
@@ -77,4 +77,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Footer;
