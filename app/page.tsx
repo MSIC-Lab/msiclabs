@@ -29,7 +29,7 @@ const projectData = [
     title: "Company Portfolio",
     description:
       "Jak Digital Solutions official website. A company that provides digital solutions to businesses.",
-    caseStudyLink: "#",
+    caseStudyLink: "https://jakdigitalsolutions.com.au/",
   },
   {
     imageSrc: "/car.png",
@@ -38,7 +38,7 @@ const projectData = [
     title: "Car Rental System",
     description:
       "Web application offering car rental services in Melbourne, Sydney, Geelong, and Central Coast to users in need of transportation",
-    caseStudyLink: "#",
+    caseStudyLink: "https://jakcarrentalsolutions.com.au/",
   },
   {
     imageSrc: "/mask.png",
@@ -56,7 +56,7 @@ const projectData = [
     title: "Online Services Website",
     description:
       "Website for JAK Property Solutions which offer unparalleled services across three states in Australia.",
-    caseStudyLink: "#",
+    caseStudyLink: "https://jakpropertysolutions.com.au/",
   },
   {
     imageSrc: "/sanima.png",
@@ -65,7 +65,7 @@ const projectData = [
     title: "Company Website",
     description:
       "Webiste for the Sanima Holdings, the Leading Steel Building Construction Company in Sri Lanka",
-    caseStudyLink: "#",
+    caseStudyLink: "https://sanima.lk/",
   },
   {
     imageSrc: "/travel.png",
