@@ -51,13 +51,14 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   };
 
   return (
-    <section className="py-4 ">
-      <div className="max-w-2xl mx-auto text-center mt-4 ">
+    <section className="py-4" id="works">
+      <div className="max-w-2xl mx-auto text-center mt-4">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
           Our Projects
         </h2>
         <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
-        Engineered with precision to achieve clients' goals and strengthen their digital presence.
+          Engineered with precision to achieve clients' goals and strengthen
+          their digital presence.
         </p>
       </div>
       <div className="relative h-screen flex items-center justify-center w-full overflow-hidden ">
@@ -99,7 +100,6 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                   />
 
                   <div className="space-y-4 flex flex-col items-center justify-center p-4">
-                    
                     <h3 className="text-2xl font-bold leading-tight text-gray-900 dark:text-white mt-3">
                       {project.title}
                     </h3>

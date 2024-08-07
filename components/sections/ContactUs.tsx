@@ -7,11 +7,9 @@ import { IoLocation } from "react-icons/io5";
 import ContactForm from "../ContactForm";
 
 const Contact = () => {
-
-
   return (
     <>
-      <section className="bg-gray-100 dark:bg-gray-900">
+      <section className="bg-gray-100 dark:bg-gray-900" id="contact">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-lg">
           <div className="flex flex-col lg:flex-row items-stretch lg:items-start gap-10 lg:gap-20">
             <div className="w-full lg:w-1/2">
@@ -24,7 +22,10 @@ const Contact = () => {
                     <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                       <FaPhone className="text-black text-lg" />
                     </div>
-                    <a href="javascript:void(0)" className="text-gray-700 text-sm ml-4">
+                    <a
+                      href="#contact"
+                      className="text-gray-700 text-sm ml-4 dark:text-white"
+                    >
                       <small className="block">Phone</small>
                       <strong>+94 714879783</strong>
                     </a>
@@ -33,7 +34,10 @@ const Contact = () => {
                     <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                       <IoLogoWhatsapp className="text-black text-lg" />
                     </div>
-                    <a href="javascript:void(0)" className="text-gray-700 text-sm ml-4">
+                    <a
+                      href="#contact"
+                      className="text-gray-700 text-sm ml-4  dark:text-white"
+                    >
                       <small className="block">Whatsapp</small>
                       <strong>+94 714879783</strong>
                     </a>
@@ -42,7 +46,10 @@ const Contact = () => {
                     <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                       <IoMail className="text-black text-lg" />
                     </div>
-                    <a href="javascript:void(0)" className="text-gray-700 text-sm ml-4">
+                    <a
+                      href="#contact"
+                      className="text-gray-700 text-sm ml-4  dark:text-white"
+                    >
                       <small className="block">Mail</small>
                       <strong>info@msiclabs.com</strong>
                     </a>
@@ -51,7 +58,10 @@ const Contact = () => {
                     <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                       <IoLocation className="text-black text-lg" />
                     </div>
-                    <a href="javascript:void(0)" className="text-gray-700 text-sm ml-4">
+                    <a
+                      href="#contact"
+                      className="text-gray-700 text-sm ml-4  dark:text-white"
+                    >
                       <small className="block">Location</small>
                       <strong>Matara, Sri Lanka</strong>
                     </a>
