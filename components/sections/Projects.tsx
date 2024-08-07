@@ -54,10 +54,10 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     <section className="p-4">
       <div className="max-w-2xl mx-auto text-center mt-4">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-          Our work
+          Our Projects
         </h2>
         <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
-          Crafted with skill and care to help our clients grow their business!
+        Engineered with precision to achieve clients' goals and strengthen their digital presence.
         </p>
       </div>
       <div className="relative h-screen flex items-center justify-center ">
