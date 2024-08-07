@@ -11,9 +11,10 @@ const Hero = () => {
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-xl xl:text-2xl text-primary-1 dark:text-white">
             Crafting Tommorrow's Tech, Today! 
             </h1>
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-black dark:text-white">
-              Payment tool for 
-            </h1>
+            <h1 className="max-w-2xl mb-4 text-6xl font-extrabold tracking-tight leading-none md:text-7xl xl:text-8xl 2xl:text-9xl text-black dark:text-white">
+  MSIC LABS
+</h1>
+
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               From checkout to global sales tax compliance, companies around the
               world use Flowbite to simplify their payment stack.
