@@ -94,7 +94,7 @@ export default function Contact() {
         {!isSubmitted && ( 
           <button
             type="submit"
-            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-purple-800 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-purple-800 sm:w-fit hover:bg-primary-1 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-primary-1 dark:hover:bg-primary-1 dark:focus:ring-blue-800"
           >
             Send message
           </button>

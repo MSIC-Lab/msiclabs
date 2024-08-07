@@ -52,15 +52,15 @@ const Hero = () => {
                     <NumberTicker value={20} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
-                    Clients
+                    Trusted Clients
                   </dd>
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                    <NumberTicker value={5} />
+                    <NumberTicker value={4.5} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
-                    Developers
+                    Positive Feedbacks
                   </dd>
                 </div>
               </dl>
