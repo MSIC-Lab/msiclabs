@@ -20,7 +20,7 @@ const letterAnimation = {
 const containerAnimation = (delay) => ({
   animate: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.05,
       delayChildren: delay,
     },
   },
