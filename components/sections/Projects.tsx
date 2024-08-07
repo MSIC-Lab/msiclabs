@@ -86,7 +86,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             >
               <Card
                 isBlurred
-                className="border-none bg-background/90 dark:bg-default-100/50 dark:bg-slate-800 max-w-[610px] w-full
+                className=" border-2 border-blue-500 bg-background/90 dark:bg-default-100/50 dark:bg-slate-800 max-w-[610px] w-full
                 
                 
                   "
