@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import Hero from "@/components/sections/hero";
+import Hero from "@/components/sections/Hero";
 import Navbar from "@/components/ui/navbar";
 import Customer from "@/components/sections/Customers";
 import Services from "@/components/sections/Services";
