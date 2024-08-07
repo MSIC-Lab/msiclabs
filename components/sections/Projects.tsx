@@ -51,8 +51,8 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   };
 
   return (
-    <section className="p-4">
-      <div className="max-w-2xl mx-auto text-center mt-4">
+    <section className="py-4 ">
+      <div className="max-w-2xl mx-auto text-center mt-4 ">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
           Our Projects
         </h2>
@@ -60,7 +60,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         Engineered with precision to achieve clients' goals and strengthen their digital presence.
         </p>
       </div>
-      <div className="relative h-screen flex items-center justify-center ">
+      <div className="relative h-screen flex items-center justify-center w-full overflow-hidden ">
         <div
           className="absolute inset-0 w-1/2 h-full"
           onClick={handleNext}
@@ -77,7 +77,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           return (
             <motion.div
               key={index}
-              className="rounded-[12px] absolute"
+              className="rounded-[12px] absolute "
               initial={{ x: "0%", scale: 1, zIndex: 5 }}
               animate={position}
               transition={{ duration: 0.5 }}
@@ -85,7 +85,10 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             >
               <Card
                 isBlurred
-                className="border-none bg-background/90 dark:bg-default-100/50 max-w-[610px] "
+                className="border-none bg-background/90 dark:bg-default-100/50 max-w-[610px] w-full
+                
+                
+                  "
                 shadow="lg"
               >
                 <CardBody>
