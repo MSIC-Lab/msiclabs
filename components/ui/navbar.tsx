@@ -1,13 +1,28 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
-import {AcmeLogo} from "./AcmeLogo";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  DropdownItem,
+  DropdownTrigger,
+  Dropdown,
+  DropdownMenu,
+  Avatar,
+} from "@nextui-org/react";
+import { AcmeLogo } from "./AcmeLogo";
+import { ThemeSwitch } from "../theme-switch";
 
-export default function App() {
+export default function Nav() {
   return (
     <Navbar>
       <NavbarBrand>
         <AcmeLogo />
-        <p className="font-bold text-inherit"><span className="text-primary-1 ml-2">MSIC</span> labs</p>
+
+        <p className="font-bold text-inherit">
+          <span className="text-primary-1 ml-2">MSIC</span> labs
+        </p>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -30,6 +45,9 @@ export default function App() {
           <Link color="foreground" href="#">
             Contact Us
           </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
     </Navbar>

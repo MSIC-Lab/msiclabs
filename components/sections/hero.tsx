@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import HeroImg from "@/public/about.png";  
 
 const Hero = () => {
   return (
@@ -33,7 +32,6 @@ const Hero = () => {
                 ></path>
               </svg>
             </a>
-            
 
             <div className="mt-10 bg-gray-100 p-4 rounded-2xl">
               <dl className="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
@@ -64,14 +62,8 @@ const Hero = () => {
               </dl>
             </div>
           </div>
-          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            {/* <Image
-              src={HeroImg}
-              alt="msic labs"
-              width={500}
-              height={500}
-            /> */}
-            
+          <div className="lg:mt-0 lg:col-span-5 lg:flex">
+            <Image src="/hero.png" alt="msic labs" width={500} height={500} />
           </div>
         </div>
       </section>
