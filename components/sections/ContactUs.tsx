@@ -23,7 +23,7 @@ const Contact = () => {
                       <FaPhone className="text-black text-lg" />
                     </div>
                     <a
-                      href="javascript:void(0)"
+                      href="#contact"
                       className="text-gray-700 text-sm ml-4 dark:text-white"
                     >
                       <small className="block">Phone</small>
@@ -35,7 +35,7 @@ const Contact = () => {
                       <IoLogoWhatsapp className="text-black text-lg" />
                     </div>
                     <a
-                      href="javascript:void(0)"
+                      href="#contact"
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Whatsapp</small>
@@ -47,7 +47,7 @@ const Contact = () => {
                       <IoMail className="text-black text-lg" />
                     </div>
                     <a
-                      href="javascript:void(0)"
+                      href="#contact"
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Mail</small>
@@ -59,7 +59,7 @@ const Contact = () => {
                       <IoLocation className="text-black text-lg" />
                     </div>
                     <a
-                      href="javascript:void(0)"
+                      href="#contact"
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Location</small>

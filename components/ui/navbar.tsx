@@ -1,51 +1,46 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   Link,
-  DropdownItem,
-  DropdownTrigger,
-  Dropdown,
-  DropdownMenu,
-  Avatar,
 } from "@nextui-org/react";
 import { AcmeLogo } from "./AcmeLogo";
 import { ThemeSwitch } from "../theme-switch";
 
+const links = [
+  { name: "Home", href: "#home" },
+  { name: "Services", href: "#services" },
+  { name: "Our Works", href: "#works" },
+  { name: "Contact Us", href: "#contact" },
+];
+
 export default function Nav() {
+  const [active, setActive] = useState(links[0].name);
+
   return (
-    <Navbar>
+    <Navbar className="dark:bg-slate-800 shadow-lg">
       <NavbarBrand>
         <AcmeLogo />
-
         <p className="font-bold text-inherit">
           <span className="text-primary-1 ml-2">MSIC</span> labs
         </p>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#home">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#services" aria-current="page" color="secondary">
-            Services
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#works">
-            Our Works
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#contact">
-            Contact Us
-          </Link>
-        </NavbarItem>
+        {links.map((link) => (
+          <NavbarItem key={link.name} isActive={active === link.name}>
+            <Link
+              color={active === link.name ? "secondary" : "foreground"}
+              href={link.href}
+              onClick={() => setActive(link.name)}
+            >
+              {link.name}
+            </Link>
+          </NavbarItem>
+        ))}
         <NavbarItem>
           <ThemeSwitch />
         </NavbarItem>
