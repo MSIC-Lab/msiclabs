@@ -1,5 +1,5 @@
 // import Image from "next/image";
-import Hero from "@/components/sections/Hero";
+import Hero from "@/components/sections/hero";
 import Navbar from "@/components/ui/navbar";
 import Customer from "@/components/sections/Customers";
 import Services from "@/components/sections/Services";
@@ -23,9 +23,10 @@ export default function Home() {
       <Customer />
       <Services />
 
-      <Projects projects={projectData} />
+      <Projects
+        projects={projectData.map((project) => ({ ...project, altText: "" }))}
+      />
       {/* <AboutUs /> */}
-
 
       {/* <Social /> */}
       <Contact />

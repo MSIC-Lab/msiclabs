@@ -1,11 +1,14 @@
 // app/providers.tsx
 
-import {NextUIProvider} from '@nextui-org/react'
+import { NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-export function Providers({children}: { children: React.ReactNode }) {
+export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <NextUIProvider>
-      {children}
+      <NextThemesProvider attribute="class" defaultTheme="light">
+        {children}
+      </NextThemesProvider>
     </NextUIProvider>
-  )
+  );
 }

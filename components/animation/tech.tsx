@@ -14,34 +14,51 @@ import {
 import { wrap } from "@motionone/utils";
 
 const TECHNOLOGIES = [
-  "react",
-  "nextjs",
-  "nodejs",
-  "mongodb",
-  "java",
-  "spring",
+  "AndroidStudio-Light",
+  "Angular-Dark",
+  "AWS-Dark",
+  "Azure-Dark",
+  "Blender-Dark",
+  "Bootstrap",
   "flutter",
-  "wordpress",
-  "woo",
-  "react",
-  "nextjs",
-  "nodejs",
-  "mongodb",
-  "java",
-  "spring",
-  "flutter",
-  "wordpress",
-  "woo",
-  "react",
-  "nextjs",
-  "nodejs",
-  "mongodb",
-  "java",
-  "spring",
-  "flutter",
-  "wordpress",
-  "woo",
-
+  "c",
+  "Cloudflare-Dark",
+  "cpp",
+  "css",
+  "Dart-Dark",
+  "ExpressJS-Dark",
+  "Figma-Dark",
+  "Firebase-Dark",
+  "Flask-Dark",
+  "Flutter-Dark",
+  "HTML",
+  "Illustrator",
+  "Java-Dark",
+  "JavaScript",
+  "Jenkins-Dark",
+  "JQuery",
+  "Kotlin-Dark",
+  "Kubernetes",
+  "Laravel-Dark",
+  "LaTeX-Dark",
+  "Linux-Dark",
+  "Markdown-Dark",
+  "MongoDB",
+  "MySQL-Dark",
+  "NextJS-Dark",
+  "NodeJS-Dark",
+  "Photoshop",
+  "PHP-Dark",
+  "PostgreSQL-Dark",
+  "Postman",
+  "Python-Dark",
+  "R-Dark",
+  "React-Dark",
+  "Scala-Dark",
+  "Spring-Dark",
+  "ThreeJS-Dark",
+  "TypeScript",
+  "Vite-Dark",
 ];
 
 
@@ -95,7 +112,7 @@ export function Technologies() {
                   width={30} // Adjust width and height as needed
                   height={30}
                   className="md:w-14 w-10"
-                  src={`/logos/logo-${logo}.svg`}
+                  src={`/tech/${logo}.svg`}
                 />
               ))}
             </motion.div>

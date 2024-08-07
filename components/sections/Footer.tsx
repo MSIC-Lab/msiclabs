@@ -25,31 +25,40 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
-                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
                     <ul className="text-gray-600 dark:text-gray-400">
-                        <li className="mb-4">
-                            <a href="https://flowbite.com" className="hover:underline">Flowbite</a>
+                        <li className="mb-3">
+                            <a href="https://flowbite.com" className="hover:underline">About us</a>
+                        </li>
+                        <li className="mb-3">
+                            <a href="https://tailwindcss.com/" className="hover:underline">Contact Us</a>
                         </li>
                         <li>
-                            <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>
+                            <a href="https://tailwindcss.com/" className="hover:underline">Projects</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Solutions</h2>
                     <ul className="text-gray-600 dark:text-gray-400">
-                        <li className="mb-4">
-                            <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Github</a>
+                        <li className="mb-3">
+                            <a href="https://github.com/MSIC-Lab" className="hover:underline ">Web Development</a>
+                        </li>
+                        <li className="mb-3">
+                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">E commerce</a>
+                        </li>
+                        <li className="mb-3">
+                            <a href="https://github.com/MSIC-Lab" className="hover:underline ">Mobile App</a>
                         </li>
                         <li>
-                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Discord</a>
+                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Cloud</a>
                         </li>
                     </ul>
                 </div>
                 <div>
                     <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                     <ul className="text-gray-600 dark:text-gray-400">
-                        <li className="mb-4">
+                        <li className="mb-3">
                             <a href="#" className="hover:underline">Privacy Policy</a>
                         </li>
                         <li>
