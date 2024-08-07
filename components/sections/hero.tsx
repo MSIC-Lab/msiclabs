@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import NumberTicker from "@/components/magicui/number-ticker";
 
 const Hero = () => {
   return (
@@ -37,26 +38,26 @@ const Hero = () => {
               <dl className="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                    73M+
+                  <NumberTicker value={20} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
-                    developers
+                    Projects
                   </dd>
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                    1B+
+                    <NumberTicker value={30} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
-                    contributors
+                    Clients
                   </dd>
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                    4M+
+                  <NumberTicker value={5} />
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
-                    organizations
+                    Developers
                   </dd>
                 </div>
               </dl>
