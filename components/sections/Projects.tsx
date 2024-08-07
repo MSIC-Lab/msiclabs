@@ -51,7 +51,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   };
 
   return (
-    <section className="py-4" id="works">
+    <section className="py-4 bg-white dark:bg-gray-900" id="works" >
       <div className="max-w-2xl mx-auto text-center mt-4">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
           Our Projects
@@ -86,7 +86,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             >
               <Card
                 isBlurred
-                className="border-none bg-background/90 dark:bg-default-100/50 max-w-[610px] w-full
+                className="border-none bg-background/90 dark:bg-default-100/50 dark:bg-slate-800 max-w-[610px] w-full
                 
                 
                   "
@@ -112,7 +112,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                     <a
                       href={project.caseStudyLink}
                       title=""
-                      className="text-white bg-primary-1 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                      className="text-white bg-primary-1 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-1 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       role="button"
                     >
                       View Project

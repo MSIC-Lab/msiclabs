@@ -21,11 +21,11 @@ export default function Nav() {
   const [active, setActive] = useState(links[0].name);
 
   return (
-    <Navbar className="dark:bg-slate-800 shadow-lg">
+    <Navbar className="dark:bg-slate-800 shadow-lg" maxWidth="xl">
       <NavbarBrand>
         <AcmeLogo />
-        <p className="font-bold text-inherit">
-          <span className="text-primary-1 ml-2">MSIC</span> labs
+        <p className="font-bold text-inherit text-black-300">
+          <span className="text-primary-1 ml-2">MSIC</span><span className="text-gray-700"> Labs</span>
         </p>
       </NavbarBrand>
 
