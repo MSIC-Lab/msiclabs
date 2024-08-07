@@ -44,30 +44,30 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   const calculatePositions = (index: number) => {
     const centerIndex = Math.floor(numProjects / 2);
     const offset = index - centerIndex;
-    const xPosition = `${offset * 50}%`;
+    const xPosition = `${offset * 60}%`; // Adjusted for better spacing
     const scale = 1 - Math.abs(offset) * 0.2;
     const zIndex = numProjects - Math.abs(offset);
     return { x: xPosition, scale, zIndex };
   };
 
   return (
-    <div className="p-4">
+    <section className="p-4">
       <div className="max-w-2xl mx-auto text-center mt-4">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-          Our work
+          Our Projects
         </h2>
         <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
-          Crafted with skill and care to help our clients grow their business!
+        Engineered with precision to achieve clients' goals and strengthen their digital presence.
         </p>
       </div>
-      <div className="relative h-screen flex items-center justify-center">
+      <div className="relative h-screen flex items-center justify-center ">
         <div
           className="absolute inset-0 w-1/2 h-full"
           onClick={handleNext}
           style={{ cursor: "pointer", zIndex: 1000 }}
         />
         <div
-          className="absolute inset-0 w-1/2 h-full left-1/2"
+          className="absolute inset-0 w-1/2 h-full left-1/2 "
           onClick={handleBack}
           style={{ cursor: "pointer", zIndex: 1000 }}
         />
@@ -81,34 +81,35 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
               initial={{ x: "0%", scale: 1, zIndex: 5 }}
               animate={position}
               transition={{ duration: 0.5 }}
-              style={{ width: "40%" }}
+              style={{ width: "35%" }}
             >
               <Card
                 isBlurred
-                className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
-                shadow="sm"
+                className="border-none bg-background/90 dark:bg-default-100/50 max-w-[610px] "
+                shadow="lg"
               >
                 <CardBody>
                   <img
-                    className="h-auto max-w-lg rounded-lg w-full"
+                    className="h-auto max-w-lg rounded-xl m-3 border-1 border-gray-200 dark:border-gray-700"
                     src={project.imageSrc}
                     alt={project.altText}
                   />
 
-                  <div className="space-y-4 flex flex-col items-center justify-center">
-                    <span className="bg-gray-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-                      {project.company}
-                    </span>
-                    <h3 className="text-2xl font-bold leading-tight text-gray-900 dark:text-white">
+                  <div className="space-y-4 flex flex-col items-center justify-center p-4">
+                    
+                    <h3 className="text-2xl font-bold leading-tight text-gray-900 dark:text-white mt-3">
                       {project.title}
                     </h3>
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
+                    <span className="bg-purple-100 text-gray-900 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-xl dark:bg-gray-700 dark:text-gray-300 ">
+                      {project.company}
+                    </span>
+                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 text-center">
                       {project.description}
                     </p>
                     <a
                       href={project.caseStudyLink}
                       title=""
-                      className="text-white bg-primary-1 justify-center hover:bg-primary-800 inline-flex items-center  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                      className="text-white bg-primary-1 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       role="button"
                     >
                       View Project
@@ -133,7 +134,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
