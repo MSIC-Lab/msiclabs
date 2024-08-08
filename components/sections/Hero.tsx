@@ -43,7 +43,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                    <NumberTicker value={20} />+
+                    <NumberTicker value={15} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
                     Trusted Clients
@@ -51,7 +51,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                    <NumberTicker value={4.5} />+
+                    <NumberTicker value={20} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
                     Positive Feedbacks
@@ -68,7 +68,7 @@ const Hero = () => {
             }
           >
             <div className="lg:mt-0 lg:col-span-5 flex justify-center items-center">
-              <Image src="/hero.png" alt="msic labs" width={500} height={500} />
+              <Image src="/hero.png" alt="msic labs" width={500} height={500} priority />
             </div>
           </Suspense>
         </div>
