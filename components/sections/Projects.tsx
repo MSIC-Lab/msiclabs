@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Card, CardBody } from "@nextui-org/react";
 import { useSwipeable } from 'react-swipeable';
+import Fade from "@/components/ui/transition/fade";
 
 interface Project {
   imageSrc: string;
@@ -68,6 +69,8 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           their digital presence.
         </p>
       </div>
+
+      <Fade opacity={0.8}>
       <div className="relative h-screen flex items-center justify-center w-full overflow-hidden " {...handlers}>
         <div
           className="absolute inset-0 w-1/2 h-full"
@@ -144,6 +147,8 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           );
         })}
       </div>
+</Fade>
+
     </section>
   );
 };
