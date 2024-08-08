@@ -3,6 +3,7 @@ import React from "react";
 import NumberTicker from "@/components/magicui/number-ticker";
 import FadeIn from "../transitions/fadein";
 import GetStarted from "../getStarted";
+import { Suspense } from "react";
 
 const Hero = () => {
   return (
@@ -59,9 +60,17 @@ const Hero = () => {
               </dl>
             </div>
           </div>
-          <div className="lg:mt-0 lg:col-span-5 flex justify-center items-center">
-            <Image src="/hero.png" alt="msic labs" width={500} height={500} />
-          </div>
+          <Suspense
+            fallback={
+              <div className="lg:mt-0 lg:col-span-5 flex justify-center items-center">
+                ...
+              </div>
+            }
+          >
+            <div className="lg:mt-0 lg:col-span-5 flex justify-center items-center">
+              <Image src="/hero.png" alt="msic labs" width={500} height={500} />
+            </div>
+          </Suspense>
         </div>
       </section>
     </div>
