@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { motion } from "framer-motion";
 
 const letterAnimation = {
@@ -27,11 +27,17 @@ const containerAnimation = (delay) => ({
 });
 
 const FadeIn = ({ className, text, delay = 0 }) => {
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
   return (
     <motion.div
       variants={containerAnimation(delay)}
       initial="initial"
-      animate="animate"
+      animate={hasMounted?"animate":"initial"}
       className={className}
     >
       {text.split("").map((char, index) => (
