@@ -68,7 +68,15 @@ const Hero = () => {
             }
           >
             <div className="lg:mt-0 lg:col-span-5 flex justify-center items-center">
-              <Image src="/hero.png" alt="msic labs" width={500} height={500} priority />
+              <Image
+                src="/hero.png"
+                alt="msic labs"
+                width={500}
+                height={500}
+                priority
+                placeholder="blur"
+                blurDataURL="/placeholder.png"
+              />
             </div>
           </Suspense>
         </div>
