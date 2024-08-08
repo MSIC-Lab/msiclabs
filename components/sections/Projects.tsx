@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Card, CardBody } from "@nextui-org/react";
+import { useSwipeable } from 'react-swipeable';
 
 interface Project {
   imageSrc: string;
@@ -50,8 +51,14 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     return { x: xPosition, scale, zIndex };
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: handleBack,
+    onSwipedRight: handleNext,
+    trackMouse: true
+  });
+
   return (
-    <section className="py-4 bg-white dark:bg-gray-900" id="works" >
+    <section className="py-4 bg-white dark:bg-gray-900" id="works">
       <div className="max-w-2xl mx-auto text-center mt-4">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
           Our Projects
@@ -61,7 +68,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           their digital presence.
         </p>
       </div>
-      <div className="relative h-screen flex items-center justify-center w-full overflow-hidden ">
+      <div className="relative h-screen flex items-center justify-center w-full overflow-hidden " {...handlers}>
         <div
           className="absolute inset-0 w-1/2 h-full"
           onClick={handleNext}
@@ -78,15 +85,15 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           return (
             <motion.div
               key={index}
-              className="rounded-[12px] absolute "
+              className="rounded-[12px] absolute w-[80%] sm:w-[55%] md:w-[35%] "
               initial={{ x: "0%", scale: 1, zIndex: 5 }}
               animate={position}
               transition={{ duration: 0.5 }}
-              style={{ width: "35%" }}
+              // style={{ width: "35%" }}
             >
               <Card
                 isBlurred
-                className=" border-2 border-blue-500 bg-background/90 dark:bg-default-100/50 dark:bg-slate-800 max-w-[610px] w-full
+                className=" bg-background/90 dark:bg-default-100/50 dark:bg-slate-800 max-w-[610px] w-full
                 
                 
                   "
