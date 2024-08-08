@@ -76,7 +76,7 @@ export function Technologies() {
     clamp: false
   });
 
-  const x = useTransform(baseX, (v) => `${wrap(-20, 0, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(100, 0, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
