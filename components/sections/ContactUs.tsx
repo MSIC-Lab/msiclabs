@@ -7,6 +7,7 @@ import { IoLocation } from "react-icons/io5";
 import ContactForm from "../ContactForm";
 
 const Contact = () => {
+  const message = "Hello MSIC Labs, I'm interested in learning more about your services.";
   return (
     <>
       <section className="bg-gray-100 dark:bg-gray-900" id="contact">
@@ -23,11 +24,11 @@ const Contact = () => {
                       <FaPhone className="text-black text-lg" />
                     </div>
                     <a
-                      href="#contact"
+                      href="tel:+94702165052"
                       className="text-gray-700 text-sm ml-4 dark:text-white"
                     >
                       <small className="block">Phone</small>
-                      <strong>+94 71 487 9783</strong>
+                      <strong>+94 70 216 5052</strong>
                     </a>
                   </li>
                   <li className="flex items-center">
@@ -35,11 +36,13 @@ const Contact = () => {
                       <IoLogoWhatsapp className="text-black text-lg" />
                     </div>
                     <a
-                      href="#contact"
+                      href={`https://wa.me/94702165052?text=${encodeURIComponent(message)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Whatsapp</small>
-                      <strong>+94 71 487 9783</strong>
+                      <strong>+94 70 216 5052</strong>
                     </a>
                   </li>
                   <li className="flex items-center">
@@ -47,7 +50,7 @@ const Contact = () => {
                       <IoMail className="text-black text-lg" />
                     </div>
                     <a
-                      href="#contact"
+                      href="mailto:info@msiclabs.com"
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Mail</small>
@@ -59,7 +62,9 @@ const Contact = () => {
                       <IoLocation className="text-black text-lg" />
                     </div>
                     <a
-                      href="#contact"
+                      href="https://www.google.com/maps/place/Colombo,+Sri+Lanka"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Location</small>
