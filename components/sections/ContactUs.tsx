@@ -27,7 +27,7 @@ const Contact = () => {
                       className="text-gray-700 text-sm ml-4 dark:text-white"
                     >
                       <small className="block">Phone</small>
-                      <strong>+94 714879783</strong>
+                      <strong>+94 71 487 9783</strong>
                     </a>
                   </li>
                   <li className="flex items-center">
@@ -39,7 +39,7 @@ const Contact = () => {
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Whatsapp</small>
-                      <strong>+94 714879783</strong>
+                      <strong>+94 71 487 9783</strong>
                     </a>
                   </li>
                   <li className="flex items-center">
@@ -63,7 +63,7 @@ const Contact = () => {
                       className="text-gray-700 text-sm ml-4  dark:text-white"
                     >
                       <small className="block">Location</small>
-                      <strong>Matara, Sri Lanka</strong>
+                      <strong>Colombo, Sri Lanka</strong>
                     </a>
                   </li>
                 </ul>
