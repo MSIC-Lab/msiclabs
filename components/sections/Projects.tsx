@@ -118,7 +118,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                     <p className="text-lg font-normal text-gray-500 dark:text-gray-400 text-center">
                       {project.description}
                     </p>
-                    <a
+                    {/* <a
                       href={project.caseStudyLink}
                       title=""
                       className="text-white bg-primary-1 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-1 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
@@ -139,7 +139,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                           clipRule="evenodd"
                         />
                       </svg>
-                    </a>
+                    </a> */}
                   </div>
                 </CardBody>
               </Card>
