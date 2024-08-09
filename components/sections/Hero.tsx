@@ -57,10 +57,10 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                    <NumberTicker value={4.5} />+
+                    <NumberTicker value={3} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
-                    Positive Feedbacks
+                    Countries & Regions
                   </dd>
                 </div>
               </dl>
