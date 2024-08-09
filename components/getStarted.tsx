@@ -8,7 +8,7 @@ export default function GetStarted() {
       href="#"
       className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-1 hover:bg-primary-2 focus:ring-1 focus:ring-primary-200 dark:focus:ring-primary-900"
     >
-      Get started
+      Explore More
       <motion.div
         className="w-5 h-5 ml-2 -mr-1"
         initial={{ x: 0 }}
