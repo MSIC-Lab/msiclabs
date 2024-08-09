@@ -24,9 +24,8 @@ const Hero = () => {
               MSIC Labs
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              At MSIC Labs, we deliver innovative CMS development, SEO
-              optimization, and IT consulting solutions. We transform ideas into
-              digital realities with quality and efficiency.
+              We breathe life into your ideas through groundbreaking technology solutions.
+              Beyond digital tools—we craft impactful solutions that unlock transformative digital potential.
             </p>
 
             <GetStarted />
@@ -38,7 +37,7 @@ const Hero = () => {
                     <NumberTicker value={20} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
-                    Projects
+                    Successful Projects
                   </dd>
                 </div>
                 <div className="flex flex-col items-center justify-center">
@@ -51,10 +50,10 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
-                    <NumberTicker value={20} />+
+                    <NumberTicker value={3} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
-                    Positive Feedbacks
+                    Countries Spanned
                   </dd>
                 </div>
               </dl>

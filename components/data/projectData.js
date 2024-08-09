@@ -1,21 +1,21 @@
 export const projectData = [
   {
     imageSrc: "/jak.png",
-    altText: "company portfolio",
+    altText: "Company Portfolio",
     company: "Jak Digital Solutions",
-    title: "Company Portfolio",
+    title: "JAK Digital Solutions Portfolio",
     description:
-      "Jak Digital Solutions official website. A company that provides digital solutions to businesses.",
+      "Official website for Jak Digital Solutions, showcasing their expertise in providing advanced digital solutions tailored for diverse business needs.",
     caseStudyLink: "https://jakdigitalsolutions.com.au/",
   },
 
   {
     imageSrc: "/mask.png",
-    altText: "Ecormmerce platform",
+    altText: "E-Commerce Platform",
     company: "Yaka Store",
-    title: "Ecommerce Platform",
+    title: "E-commerce Platform for Traditional Masks",
     description:
-      "E Commerce Website that offers a wide range of traditional masks from Sri Lankan culture to users who are interested worlwide.",
+      "An e-commerce website featuring a wide array of traditional Sri Lankan masks, designed to reach and engage a global audience.",
     caseStudyLink: "#",
   },
   {
@@ -24,52 +24,52 @@ export const projectData = [
     company: "Bouganvilla Hotels",
     title: "Hotel Management System",
     description:
-      "Hotel Management System for Bouganvilla Hotels, a chain of hotels in Sri Lanka.",
+      "A robust hotel management system developed for Bouganvilla Hotels, enhancing operational efficiency across their chain of properties in Sri Lanka.",
     caseStudyLink: "#",
   },
   {
     imageSrc: "/pos.png",
     altText: "Point of Sale System",
-    company: "Retail Shop",
-    title: "Point of Sale System",
+    company: "Retail Shops",
+    title: "MSIC Point of Sale System",
     description:
-      "MSIC POS is a point of sale system that help you manage your business with ease.",
+      "MSIC POS provides a sophisticated point of sale system designed to streamline retail operations and improve business management.",
     caseStudyLink: "#",
   },
   {
     imageSrc: "/car.png",
     altText: "Car Rental System",
     company: "JAK Car Rental Solutions",
-    title: "Car Rental System",
+    title: "Car Rental Web Application",
     description:
-      "Web application offering car rental services in Melbourne, Sydney, Geelong, and Central Coast to users in need of transportation",
+      "A web application delivering efficient car rental services across Melbourne, Sydney, Geelong, and Central Coast, tailored to meet diverse transportation needs.",
     caseStudyLink: "https://jakcarrentalsolutions.com.au/",
   },
   {
     imageSrc: "/property.png",
     altText: "Online Services Website",
     company: "JAK Property Solutions",
-    title: "Online Services Website",
+    title: "JAK Property Solutions Website",
     description:
-      "Website for JAK Property Solutions which offer unparalleled services across three states in Australia.",
+      "A dynamic website for JAK Property Solutions, offering exceptional property management and real estate services across three Australian states.",
     caseStudyLink: "https://jakpropertysolutions.com.au/",
   },
   {
     imageSrc: "/sanima.png",
     altText: "Company Website",
     company: "Sanima.lk",
-    title: "Company Website",
+    title: "Corporate Website for Sanima Holdings",
     description:
-      "Webiste for the Sanima Holdings, the Leading Steel Building Construction Company in Sri Lanka",
+      "Website for Sanima Holdings, the leading steel building construction company in Sri Lanka, reflecting their industry leadership and expertise.",
     caseStudyLink: "https://sanima.lk/",
   },
   {
     imageSrc: "/travel.png",
-    altText: "Company Website",
+    altText: "Travel Agency Website",
     company: "A & M Travels",
-    title: "Company Website",
+    title: "A&M Travel Agency Website",
     description:
-      "Website for A & M Travels, a travel agency that offers a wide range of travel services.",
+      "A feature-rich website for A & M Travels, a travel agency offering a comprehensive range of travel services and destination options.",
     caseStudyLink: "#",
   },
 
@@ -77,9 +77,9 @@ export const projectData = [
     imageSrc: "/hotelRomaya.png",
     altText: "Hotel Website",
     company: "Hotel Romaya",
-    title: "Hotel Website",
+    title: "Website for Luxury Hotel",
     description:
-      "Experience luxury and tranquility at Hotel Romaya, nestled in the picturesque coastal towns of Matara and Mirissa.",
+      "Website for Hotel Romaya, offering an immersive experience of luxury and tranquility in the scenic coastal towns of Matara and Mirissa.",
     caseStudyLink: "https://hotelromaya.com",
   },
 ];
