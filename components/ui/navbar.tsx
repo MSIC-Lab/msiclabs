@@ -11,11 +11,11 @@ import { AcmeLogo } from "./AcmeLogo";
 import { ThemeSwitch } from "../theme-switch";
 
 const links = [
-  { name: "Home", href: "#home" },
-  { name: "Services", href: "#services" },
-  { name: "Our Works", href: "#works" },
-  { name: "About Us", href: "#about" },
-  { name: "Contact Us", href: "#contact" },
+  { name: "Home", href: "/#home" },
+  { name: "Services", href: "/#services" },
+  { name: "Our Works", href: "/#works" },
+  { name: "About Us", href: "/#about" },
+  { name: "Contact Us", href: "/#contact" },
 ];
 
 export default function Nav() {
@@ -24,7 +24,7 @@ export default function Nav() {
   return (
     <Navbar className="dark:bg-slate-800 shadow-lg" maxWidth="xl">
       <NavbarBrand>
-        <Link href="#home">
+        <Link href="/#home">
           <AcmeLogo />
           <p className="font-bold text-inherit text-black-300">
             <span className="text-primary-1 ml-2 dark:text-white">MSIC</span>
