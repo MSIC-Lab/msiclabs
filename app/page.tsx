@@ -6,7 +6,7 @@ import Services from "@/components/sections/Services";
 // import Social from "@/components/sections/Social";
 import Footer from "@/components/sections/Footer";
 import Contact from "@/components/sections/ContactUs";
-// import AboutUs from "@/components/sections/AboutUs";
+import AboutUs from "@/components/sections/AboutUs";
 
 import Projects from "@/components/sections/Projects";
 // import Services from "@/components/sections/services";
@@ -24,7 +24,7 @@ export default function Home() {
       <Services />
 
       <Projects projects={projectData} />
-      {/* <AboutUs /> */}
+      <AboutUs />
 
       {/* <Social /> */}
       <Contact />

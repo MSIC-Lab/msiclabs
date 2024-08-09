@@ -28,13 +28,13 @@ const Footer = () => {
                     <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
                     <ul className="text-gray-600 dark:text-gray-400">
                         <li className="mb-3">
-                            <a href="https://flowbite.com" className="hover:underline">About us</a>
+                            <a href="#" className="hover:underline">About us</a>
                         </li>
                         <li className="mb-3">
-                            <a href="https://tailwindcss.com/" className="hover:underline">Contact Us</a>
+                            <a href="#" className="hover:underline">Contact Us</a>
                         </li>
                         <li>
-                            <a href="https://tailwindcss.com/" className="hover:underline">Projects</a>
+                            <a href="#" className="hover:underline">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -42,16 +42,16 @@ const Footer = () => {
                     <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Solutions</h2>
                     <ul className="text-gray-600 dark:text-gray-400">
                         <li className="mb-3">
-                            <a href="https://github.com/MSIC-Lab" className="hover:underline ">Web Development</a>
+                            <a href="#" className="hover:underline ">Web Development</a>
                         </li>
                         <li className="mb-3">
-                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">E commerce</a>
+                            <a href="#" className="hover:underline">E commerce</a>
                         </li>
                         <li className="mb-3">
-                            <a href="https://github.com/MSIC-Lab" className="hover:underline ">Mobile App</a>
+                            <a href="#" className="hover:underline ">Mobile App</a>
                         </li>
                         <li>
-                            <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">Cloud</a>
+                            <a href="#" className="hover:underline">Cloud Solutions</a>
                         </li>
                     </ul>
                 </div>
@@ -73,19 +73,19 @@ const Footer = () => {
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://misclabs.com" className="hover:underline">MSIC Labs™</a>. All Rights Reserved.
             </span>
             <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a href="https://www.facebook.com/profile.php?id=61561512306189&mibextid=ZbWKwL" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <FaFacebook />
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a href="https://x.com/msiclabs" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <FaTwitter />
                 </a>
                 <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <FaInstagram />
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a href="https://www.linkedin.com/company/msiclabs" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <FaLinkedin />
                 </a>
-                <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                <a href="https://github.com/MSIC-Lab" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <FaGithub />
                 </a>
             </div>

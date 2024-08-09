@@ -12,7 +12,7 @@ const Services = () => {
             Our Services
           </h2>
           <p className="text-gray-500 sm:text-xl text-center dark:text-gray-400">
-            MSIC Labs offers premier solutions to support your growth in the
+            We offer premier solutions to support your growth in the
             digital realm.
           </p>
         </div>

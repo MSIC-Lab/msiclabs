@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Card, CardBody } from "@nextui-org/react";
+import { useSwipeable } from 'react-swipeable';
+import Fade from "@/components/ui/transition/fade";
 
 interface Project {
   imageSrc: string;
@@ -50,18 +52,25 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
     return { x: xPosition, scale, zIndex };
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: handleBack,
+    onSwipedRight: handleNext,
+    trackMouse: true
+  });
+
   return (
-    <section className="py-4 bg-white dark:bg-gray-900" id="works" >
+    <section className="py-4 bg-white dark:bg-gray-900" id="works">
       <div className="max-w-2xl mx-auto text-center mt-4">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
           Our Projects
         </h2>
         <p className="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
-          Engineered with precision to achieve clients' goals and strengthen
-          their digital presence.
+          Discover the impactful solutions we’ve created advancing the digital experience.
         </p>
       </div>
-      <div className="relative h-screen flex items-center justify-center w-full overflow-hidden ">
+
+      <Fade opacity={0.8}>
+      <div className="relative h-screen flex items-center justify-center w-full overflow-hidden " {...handlers}>
         <div
           className="absolute inset-0 w-1/2 h-full"
           onClick={handleNext}
@@ -78,15 +87,15 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           return (
             <motion.div
               key={index}
-              className="rounded-[12px] absolute "
+              className="rounded-[12px] absolute w-[80%] sm:w-[55%] md:w-[35%] "
               initial={{ x: "0%", scale: 1, zIndex: 5 }}
               animate={position}
               transition={{ duration: 0.5 }}
-              style={{ width: "35%" }}
+              // style={{ width: "35%" }}
             >
               <Card
                 isBlurred
-                className="border-none bg-background/90 dark:bg-default-100/50 dark:bg-slate-800 max-w-[610px] w-full
+                className=" bg-background/90 dark:bg-default-100/50 dark:bg-slate-800 max-w-[610px] w-full
                 
                 
                   "
@@ -114,6 +123,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
                       title=""
                       className="text-white bg-primary-1 justify-center hover:bg-primary-800 inline-flex items-center focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-1 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                       role="button"
+                      style={{ cursor: "pointer", zIndex: 2000 }}
                     >
                       View Project
                       <svg
@@ -137,6 +147,8 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           );
         })}
       </div>
+</Fade>
+
     </section>
   );
 };

@@ -64,7 +64,7 @@ const TECHNOLOGIES = [
 
 export function Technologies() {
 
-    const baseVelocity = 5;
+    const baseVelocity =2;
   const baseX = useMotionValue(10);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -76,16 +76,13 @@ export function Technologies() {
     clamp: false
   });
 
-  const x = useTransform(baseX, (v) => `${wrap(-100, 0, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-50, 0, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
-    /**
-     * This is what changes the direction of the scroll once we
-     * switch scrolling directions.
-     */
+
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
@@ -105,6 +102,16 @@ export function Technologies() {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center overflow-hidden">
             <motion.div className="flex gap-20" style={{ x }}>
+              {TECHNOLOGIES.map((logo, key) => (
+                <Image
+                  key={key}
+                  alt={logo}
+                  width={30} // Adjust width and height as needed
+                  height={30}
+                  className="md:w-14 w-10"
+                  src={`/tech/${logo}.svg`}
+                />
+              ))}
               {TECHNOLOGIES.map((logo, key) => (
                 <Image
                   key={key}

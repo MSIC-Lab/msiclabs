@@ -3,7 +3,7 @@ import {Card, CardFooter, Image, Button} from "@nextui-org/react";
 
 export default function App() {
   return (
-    <Card isFooterBlurred radius="lg" className="border-none relative overflow-hidden">
+    <Card isFooterBlurred radius="lg" className=" relative overflow-hidden">
       <Image
         alt="Woman listening to music"
         className="object-cover"
