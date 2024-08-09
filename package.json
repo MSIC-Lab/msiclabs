@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -23,11 +24,14 @@
     "framer-motion": "^11.3.21",
     "framer-motion-carousel": "^2.0.4",
     "locomotive-scroll": "^4.1.4",
+    "msic-portfolio": "file:",
     "next": "14.2.4",
+    "next-sitemap": "^4.2.3",
     "next-themes": "^0.3.0",
     "postcss-loader": "^8.1.1",
     "react": "^18.3.1",
     "react-dom": "^18",
+    "react-floating-whatsapp": "^5.0.8",
     "react-icons": "^5.2.1",
     "react-swipeable": "^7.0.1",
     "react-use-gesture": "^9.1.3",
