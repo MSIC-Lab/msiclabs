@@ -10,7 +10,7 @@ export default function Contact() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    formData.append("access_key", "a4fd2cec-f9ae-4dc9-9309-0e0a480adb41");
+    formData.append("access_key", "2c98bd27-c356-475c-b22f-38f9405ea12f");
 
     const object = Object.fromEntries(formData.entries());
     const json = JSON.stringify(object);
@@ -32,10 +32,12 @@ export default function Contact() {
         setMessageType("success");
         setIsSubmitted(true); 
       } else {
+        console.error(result);
         setMessage("Sorry, there was an error sending your message.");
         setMessageType("error");
       }
     } catch (error) {
+      console.error(error);
       setMessage("An unexpected error occurred. Please try again later.");
       setMessageType("error");
     }
@@ -49,14 +51,14 @@ export default function Contact() {
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
           >
-            Your email
+            E mail
           </label>
           <input
             type="email"
             id="email"
             name="email"
             className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-            placeholder="name@flowbite.com"
+            placeholder="your Email"
             required
           />
         </div>
@@ -87,7 +89,7 @@ export default function Contact() {
             id="message"
             name="message"
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Leave a comment..."
+            placeholder="Leave a message..."
             required
           ></textarea>
         </div>

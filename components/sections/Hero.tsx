@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import React from "react";
 import NumberTicker from "@/components/magicui/number-ticker";
@@ -24,9 +25,10 @@ const Hero = () => {
               MSIC Labs
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+
               We breathe life into your ideas through groundbreaking technology solutions.
               Beyond digital tools—we craft impactful solutions that unlock transformative digital potential.
-            </p>
+          </p>
 
             <GetStarted />
 
@@ -50,6 +52,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-3xl md:text-4xl font-extrabold">
+
                     <NumberTicker value={3} />+
                   </dt>
                   <dd className="font-light text-gray-500 dark:text-gray-400">
@@ -85,3 +88,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
