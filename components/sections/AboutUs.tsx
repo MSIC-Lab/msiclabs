@@ -43,7 +43,7 @@ const AboutUs: React.FC = () => {
     
     
 </section>
-<OurTeam />
+{/* <OurTeam /> */}
         </>
     );
 };
