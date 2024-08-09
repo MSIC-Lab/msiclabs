@@ -14,6 +14,7 @@ const links = [
   { name: "Home", href: "#home" },
   { name: "Services", href: "#services" },
   { name: "Our Works", href: "#works" },
+  { name: "About Us", href: "#about" },
   { name: "Contact Us", href: "#contact" },
 ];
 
@@ -23,10 +24,13 @@ export default function Nav() {
   return (
     <Navbar className="dark:bg-slate-800 shadow-lg" maxWidth="xl">
       <NavbarBrand>
-        <AcmeLogo />
-        <p className="font-bold text-inherit text-black-300">
-          <span className="text-primary-1 ml-2">MSIC</span><span className="text-gray-700"> Labs</span>
-        </p>
+        <Link href="#home">
+          <AcmeLogo />
+          <p className="font-bold text-inherit text-black-300">
+            <span className="text-primary-1 ml-2 dark:text-white">MSIC</span>
+            <span className="text-gray-700 dark:text-white"> Labs</span>
+          </p>
+        </Link>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
