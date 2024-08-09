@@ -4,6 +4,7 @@ import OurTeam from "../OurTeam";
 import { GoGoal } from "react-icons/go";
 import { FaEye } from "react-icons/fa";
 import FadeIn from "@/components/ui/transition/fade";
+import { vision, mission, aboutUs } from "@/components/data/aboutUsData"
 
 const AboutUs: React.FC = () => {
   return (
@@ -35,8 +36,7 @@ const AboutUs: React.FC = () => {
             About MSIC Labs
           </h1>
           <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-            Here at MSIC Labs we focus on markets where technology, innovation,
-            and capital can unlock long-term value and drive economic growth.
+            {aboutUs}
           </p>
           {/* <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
@@ -51,23 +51,22 @@ const AboutUs: React.FC = () => {
           <FadeIn opacity={0.8}>
             <div className="grid gap-8 px-4 mx-auto max-w-screen-xl lg:grid-cols-2 lg:px-12">
               <div className="flex flex-col justify-center items-center space-y-4 lg:space-y-6 bg-gray-100 dark:bg-gray-800 p-5 m-5 rounded-xl">
-                <GoGoal className="w-10 h-10 text-gray-900 dark:text-white" />
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Our Mission
-                </h2>
-                <p className="text-lg text-gray-500 dark:text-gray-400">
-                  Our mission is to create a better world through technology and
-                  innovation.
-                </p>
-              </div>
-              <div className="flex flex-col justify-center items-center space-y-4 lg:space-y-6 bg-gray-100 dark:bg-gray-800 p-5 m-5 rounded-xl">
                 <FaEye className="text-4xl text-gray-900 dark:text-white" />
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
                   Our Vision
                 </h2>
                 <p className="text-lg text-gray-500 dark:text-gray-400 text-center">
-                  Our vision is to be the leading technology company in the
-                  world.
+                  {vision}
+                </p>
+                
+              </div>
+              <div className="flex flex-col justify-center items-center space-y-4 lg:space-y-6 bg-gray-100 dark:bg-gray-800 p-5 m-5 rounded-xl">
+                <GoGoal className="w-10 h-10 text-gray-900 dark:text-white" />
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  Our Mission
+                </h2>
+                <p className="text-lg text-gray-500 dark:text-gray-400">
+                  {mission}
                 </p>
               </div>
             </div>
