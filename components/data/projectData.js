@@ -82,4 +82,13 @@ export const projectData = [
       "Website for Hotel Romaya, offering an immersive experience of luxury and tranquility in the scenic coastal towns of Matara and Mirissa.",
     caseStudyLink: "https://hotelromaya.com",
   },
+  {
+    imageSrc: "/ceylonrent.png",
+    altText: "Vehicle & Accommodation Rental Website",
+    company: "Ceylon Rent",
+    title: "Vehicle Rental Website",
+    description:
+      "A user-friendly website for Ceylon Rent, offering vehicle and accommodation rentals across Sri Lanka, helping tourists explore the island with ease.",
+    caseStudyLink: "https://ceylonrent.com",
+  },
 ];
