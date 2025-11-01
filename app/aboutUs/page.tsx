@@ -220,7 +220,7 @@ const AboutUsPage: React.FC = () => {
             </section>
 
             {/* Team Section */}
-            <OurTeam />
+            {/* <OurTeam /> */}
 
             {/* Call to Action */}
             <section className="bg-gradient-to-r from-blue-600 to-violet-600 py-20">
