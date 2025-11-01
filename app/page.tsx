@@ -7,13 +7,11 @@ import Services from "@/components/sections/Services";
 import Footer from "@/components/sections/Footer";
 import Contact from "@/components/sections/ContactUs";
 import AboutUs from "@/components/sections/AboutUs";
+import OurCustomers from "@/components/sections/OurCustomers";
 
-import Projects from "@/components/sections/Projects";
 // import Services from "@/components/sections/services";
 // import Technologies from "@/components/sections/technologies";
 // import Contact from "@/components/sections/contact";
-
-import { projectData } from "@/components/data/projectData";
 
 export default function Home() {
   return (
@@ -22,8 +20,7 @@ export default function Home() {
       <Hero />
       <Customer />
       <Services />
-
-      <Projects projects={projectData} />
+      <OurCustomers />
       <AboutUs />
 
       {/* <Social /> */}

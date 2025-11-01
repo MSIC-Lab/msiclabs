@@ -29,7 +29,7 @@ const Services = () => {
           </p>
         </motion.div>
         
-        <div className="grid gap-6 justify-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-6 justify-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {serviceData.map((service, index) => (
             <motion.div
               key={index}
@@ -37,7 +37,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="w-full"
+              className="w-full max-w-sm"
             >
               <ServiceCard
                 title={service.title}
