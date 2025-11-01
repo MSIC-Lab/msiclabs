@@ -25,10 +25,10 @@ const links = [
     name: "Products", 
     href: "#",
     dropdown: [
-      { name: "Luvia ERP", href: "/products/luvia-erp", description: "Enterprise Resource Planning" },
-      { name: "MSIC Hotel Management", href: "/products/hotel-management", description: "Complete Hotel Solutions" },
-      { name: "MSIC BOT", href: "/products/msic-bot", description: "AI-Powered Automation" },
-      { name: "Other Projects", href: "/projects", description: "View All Projects" },
+      { name: "Luvia ERP", href: "/projects#luvia-erp", description: "Enterprise Resource Planning" },
+      { name: "MSIC Hotel Management", href: "/projects#hotel-management", description: "Complete Hotel Solutions" },
+      { name: "MSIC BOT", href: "/projects#msic-chatbot", description: "AI-Powered Automation" },
+      { name: "Other Projects", href: "/projects#other-projects", description: "View All Projects" },
     ]
   },
   { name: "About Us", href: "/aboutUs" },

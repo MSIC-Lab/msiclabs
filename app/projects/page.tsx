@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectsHero from '@/components/sections/ProjectsHero';
-import { LuviaERPSection, HotelManagementSection, OtherProjectsSection } from '@/components/sections/ProjectShowcase';
+import { LuviaERPSection, HotelManagementSection, MSICChatbotSection, OtherProjectsSection } from '@/components/sections/ProjectShowcase';
 import { projectData } from '@/components/data/projectData';
 import NavBar from '@/components/ui/navbar';
 import Footer from '@/components/sections/Footer';
@@ -22,6 +22,7 @@ export default function ProjectsPage() {
             <div id="projects">
                 <LuviaERPSection />
                 <HotelManagementSection />
+                <MSICChatbotSection />
                 <OtherProjectsSection projects={projectData} />
             </div>
             <Footer />
