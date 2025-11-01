@@ -1,148 +1,166 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "@/public/msiclogo.png";
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <>
-      <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
-        <div className="mx-auto max-w-screen-xl">
-          <div className="md:flex md:justify-between">
-            <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com" className="flex items-center">
+    <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+      <div className="mx-auto max-w-screen-xl p-6 lg:p-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          {/* Brand Section */}
+          <div className="lg:col-span-1">
+            <a href="/" className="flex items-center mb-6 group">
+              <div className="relative mr-3 h-10 w-10 rounded-xl overflow-hidden group-hover:scale-110 transition-transform duration-300">
                 <Image
                   src={Logo}
-                  className="mr-3 h-8 w-8"
-                  alt="FlowBite Logo"
+                  alt="MSIC Labs Logo"
+                  fill
+                  className="object-contain"
                 />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-700 dark:text-white">
-                  MSIC{" "}
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                  MSIC Labs
                 </span>
-                <span className="self-center text-2xl font-semibold whitespace-nowrap text-gray-700 dark:text-white">
-                  {" "}
-                  Labs{" "}
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  Innovation & Technology
                 </span>
-              </a>
-            </div>
-            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  Company
-                </h2>
-                <ul className="text-gray-600 dark:text-gray-400">
-                  <li className="mb-3">
-                    <a href="#about" className="hover:underline">
-                      About us
-                    </a>
-                  </li>
-                  <li className="mb-3">
-                    <a href="#contact" className="hover:underline">
-                      Contact Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#works" className="hover:underline">
-                      Projects
-                    </a>
-                  </li>
-                </ul>
               </div>
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  Solutions
-                </h2>
-                <ul className="text-gray-600 dark:text-gray-400">
-                  <li className="mb-3">
-                    <a href="#" className="hover:underline ">
-                      Web Development
-                    </a>
-                  </li>
-                  <li className="mb-3">
-                    <a href="#" className="hover:underline">
-                      E commerce
-                    </a>
-                  </li>
-                  <li className="mb-3">
-                    <a href="#" className="hover:underline ">
-                      Mobile App
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Cloud Solutions
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  Legal
-                </h2>
-                <ul className="text-gray-600 dark:text-gray-400">
-                  <li className="mb-3">
-                    <a href="#" className="hover:underline">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Terms &amp; Conditions
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            </a>
+            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              Transforming businesses through innovative technology solutions and expert digital consultancy.
+            </p>
           </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-              © 2024{" "}
-              <a href="https://msiclabs.com" className="hover:underline">
-                MSIC Labs™
-              </a>
-              . All Rights Reserved.
-            </span>
-            <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-              <a
-                href="https://www.facebook.com/profile.php?id=61561512306189&mibextid=ZbWKwL"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
-                <FaFacebook />
-              </a>
-              <a
-                href="https://x.com/msiclabs"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
-                <FaTwitter />
-              </a>
-              <a
-                href="#"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/msiclabs"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://github.com/MSIC-Lab"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              >
-                <FaGithub />
-              </a>
+
+          {/* Company Links */}
+          <div>
+            <h3 className="mb-6 text-sm font-bold text-gray-900 uppercase tracking-wider dark:text-white">
+              Company
+            </h3>
+            <ul className="space-y-3 text-gray-600 dark:text-gray-400">
+              <li>
+                <a href="/#about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/#contact" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="/projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="/#works" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Our Work
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Solutions Links */}
+          <div>
+            <h3 className="mb-6 text-sm font-bold text-gray-900 uppercase tracking-wider dark:text-white">
+              Solutions
+            </h3>
+            <ul className="space-y-3 text-gray-600 dark:text-gray-400">
+              <li>
+                <a href="/#services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Web Development
+                </a>
+              </li>
+              <li>
+                <a href="/#services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  E-Commerce
+                </a>
+              </li>
+              <li>
+                <a href="/#services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Mobile Apps
+                </a>
+              </li>
+              <li>
+                <a href="/#services" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Cloud Solutions
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal & Social */}
+          <div>
+            <h3 className="mb-6 text-sm font-bold text-gray-900 uppercase tracking-wider dark:text-white">
+              Legal
+            </h3>
+            <ul className="space-y-3 text-gray-600 dark:text-gray-400 mb-8">
+              <li>
+                <a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 flex items-center group">
+                  <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  Terms & Conditions
+                </a>
+              </li>
+            </ul>
+
+            {/* Social Media Icons */}
+            <div className="flex gap-3">
+              {[
+                { icon: <FaFacebook />, href: "https://www.facebook.com/profile.php?id=61561512306189&mibextid=ZbWKwL", color: "hover:bg-blue-600" },
+                { icon: <FaTwitter />, href: "https://x.com/msiclabs", color: "hover:bg-blue-400" },
+                { icon: <FaLinkedin />, href: "https://www.linkedin.com/company/msiclabs", color: "hover:bg-blue-700" },
+                { icon: <FaGithub />, href: "https://github.com/MSIC-Lab", color: "hover:bg-gray-700" },
+                { icon: <FaInstagram />, href: "#", color: "hover:bg-pink-600" },
+              ].map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-600 dark:text-gray-400 hover:text-white ${social.color} transition-all duration-300 hover:scale-110`}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>
-      </footer>
-    </>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              © {currentYear}{" "}
+              <a href="https://msiclabs.com" className="hover:text-blue-600 dark:hover:text-blue-400 font-semibold transition-colors">
+                MSIC Labs™
+              </a>
+              . All Rights Reserved.
+            </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Crafted with ❤️ in Sri Lanka
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 
