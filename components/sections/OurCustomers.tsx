@@ -40,10 +40,10 @@ const customers = [
     name: "Modern Logo",
     logo: "/customers/LOGOModern.png",
   },
-//   {
-//     name: "Logo Brand",
-//     logo: "/customers/Logo[1].png",
-//   },
+  {
+    name: "Sanima Roofing",
+    logo: "/customers/sanima.png",
+  },
   {
     name: "Matara Properties",
     logo: "/customers/MataraProperties.jpg",
