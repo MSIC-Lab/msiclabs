@@ -40,10 +40,10 @@ const customers = [
     name: "Modern Logo",
     logo: "/customers/LOGOModern.png",
   },
-  {
-    name: "Logo Brand",
-    logo: "/customers/Logo[1].png",
-  },
+//   {
+//     name: "Logo Brand",
+//     logo: "/customers/Logo[1].png",
+//   },
   {
     name: "Matara Properties",
     logo: "/customers/MataraProperties.jpg",
@@ -97,7 +97,7 @@ const OurCustomers = () => {
           </p>
         </motion.div>
 
-        {/* Customer Logos Grid */}
+        {/* Customer Logos */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -110,7 +110,7 @@ const OurCustomers = () => {
           
           {/* Logos Container */}
           <div className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-3xl border border-gray-200/50 dark:border-gray-700/50 p-8 md:p-12 shadow-xl">
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 md:gap-12">
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
               {customers.map((customer, index) => (
                 <motion.div
                   key={index}
@@ -120,13 +120,13 @@ const OurCustomers = () => {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="group relative flex items-center justify-center"
                 >
-                  <div className="relative w-full h-20 md:h-24 flex items-center justify-center">
+                  <div className="relative flex items-center justify-center w-24 h-20 md:w-32 md:h-24">
                     <Image
                       src={customer.logo}
                       alt={customer.name}
                       width={150}
                       height={80}
-                      className="object-contain max-h-full w-auto transition-all duration-300 group-hover:scale-110"
+                      className="object-contain max-h-full max-w-full transition-all duration-300 group-hover:scale-110 "
                     />
                   </div>
                 </motion.div>
