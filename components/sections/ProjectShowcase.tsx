@@ -45,7 +45,7 @@ export const LuviaERPSection = () => {
 
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          {/* Image/Mockup Side */}
+          {/* Video/Mockup Side */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -62,16 +62,13 @@ export const LuviaERPSection = () => {
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
                 </div>
-                <div className="p-8">
-                  <div className="space-y-4">
-                    <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4"></div>
-                    <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/2"></div>
-                    <div className="h-32 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 rounded"></div>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="h-20 bg-gray-100 dark:bg-gray-700 rounded"></div>
-                      <div className="h-20 bg-gray-100 dark:bg-gray-700 rounded"></div>
-                    </div>
-                  </div>
+                <div className="aspect-video">
+                  <iframe
+                    src="https://drive.google.com/file/d/1Z_wv7mELhK1Aaxp4e2fAyalCpBdR9r7g/preview"
+                    className="w-full h-full"
+                    allow="autoplay"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -166,7 +163,7 @@ export const LuviaERPSection = () => {
         </motion.div>
 
         {/* Customer Logos */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -189,7 +186,7 @@ export const LuviaERPSection = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
