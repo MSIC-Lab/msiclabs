@@ -47,7 +47,7 @@ const Hero = () => {
               <dl className="grid max-w-screen-md gap-8 mx-auto text-gray-900 grid-cols-3 dark:text-white">
                 <div className="flex flex-col items-center justify-center">
                   <dt className="mb-2 text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    <NumberTicker value={20} />+
+                    <NumberTicker value={30} />+
                   </dt>
                   <dd className="text-sm font-medium text-gray-600 dark:text-gray-400 text-center">
                     Successful Projects
@@ -55,7 +55,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center border-x border-gray-200 dark:border-gray-700">
                   <dt className="mb-2 text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    <NumberTicker value={15} />+
+                    <NumberTicker value={25} />+
                   </dt>
                   <dd className="text-sm font-medium text-gray-600 dark:text-gray-400 text-center">
                     Trusted Clients

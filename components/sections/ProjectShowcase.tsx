@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import NumberTicker from "@/components/magicui/number-ticker";
 
-// LUVIa ERP Section Component
+// LUVIA ERP Section Component
 export const LuviaERPSection = () => {
   const stats = [
     { label: "Active Users", value: 500, suffix: "+" },
@@ -36,7 +36,7 @@ export const LuviaERPSection = () => {
             Our Flagship Product
           </span>
           <h2 className="mt-4 text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white">
-            LUVIa ERP
+            LUVIA ERP
           </h2>
           <p className="mt-4 text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Enterprise Resource Planning solution that transforms business operations
@@ -64,7 +64,7 @@ export const LuviaERPSection = () => {
                 </div>
                 <div className="aspect-video">
                   <iframe
-                    src="https://drive.google.com/file/d/1Z_wv7mELhK1Aaxp4e2fAyalCpBdR9r7g/preview"
+                    src="https://drive.google.com/file/d/1Z_wv7mELhK1Aaxp4e2fAyalCpBdR9r7g/preview?autoplay=1"
                     className="w-full h-full"
                     allow="autoplay"
                     allowFullScreen
@@ -85,9 +85,9 @@ export const LuviaERPSection = () => {
               Comprehensive Business Management
             </h3>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-              LUVIa ERP is our flagship enterprise resource planning solution designed
+              LUVIA ERP is our flagship enterprise resource planning solution designed
               to streamline and automate core business processes. From inventory
-              management to financial reporting, LUVIa ERP provides a unified platform
+              management to financial reporting, LUVIA ERP provides a unified platform
               for complete business visibility and control.
             </p>
 
@@ -133,7 +133,7 @@ export const LuviaERPSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg transition-all duration-200"
             >
-              Visit LUVIa ERP
+              Visit LUVIA ERP
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
