@@ -104,7 +104,7 @@ export default function Nav() {
                       key={item.name}
                       description={item.description}
                       href={item.href}
-                      className="py-3"
+                      className="text-blue-600 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/20 py-3"
                     >
                       {item.name}
                     </DropdownItem>
