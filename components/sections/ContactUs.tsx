@@ -38,6 +38,7 @@ const Contact = () => {
       value: "Colombo, Sri Lanka",
       href: "https://www.google.com/maps/place/Colombo,+Sri+Lanka",
       external: true,
+      
     },
   ];
 

@@ -1,9 +1,26 @@
-# *
+# Robots.txt for MSIC Labs
+# https://msiclabs.com
+
+# Allow all search engines
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Crawl delay (optional)
+Crawl-delay: 0
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+
 
 # Host
 Host: https://msiclabs.com
 
 # Sitemaps
 Sitemap: https://msiclabs.com/sitemap.xml
+Sitemap: https://msiclabs.com/sitemap-0.xml
